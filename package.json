@@ -1,0 +1,44 @@
+{
+  "name": "jupyterlab-datasets-tree",
+  "version": "0.1.0",
+  "description": "jupyterlab-datasets-tree",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:soolx/jupyterlab-extension-demo.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w",
+    "dev": "umi-lib build"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^1.0.0-alpha.6",
+    "@jupyterlab/apputils": "^1.0.0-alpha.6",
+    "@phosphor/widgets": "^1.6.0",
+    "antd": "^3.17.0",
+    "axios": "^0.18.0",
+    "react": "^16.8.6",
+    "umi-library": "^1.5.1"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.11.0",
+    "rimraf": "^2.6.1",
+    "typescript": "~3.1.1"
+  },
+  "jupyterlab": {
+    "extension": true
+  }
+}

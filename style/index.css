@@ -1,0 +1,41 @@
+
+@import '~antd/dist/antd.css';
+.tree{
+  position: relative;
+  height: 100%;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  
+}
+.treetitle{
+    height:32px;
+    padding: 0 16px;
+  }
+.treelist{
+    margin-top: 12px;
+    flex:1;
+    overflow: auto;
+    overflow-x:hidden;
+  }
+.tree .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper:before, .ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-node-content-wrapper:before{
+      height: 40px;
+      border-bottom: 1px solid rgba(16,38,58,0.15);
+}
+.tree .ant-tree li .ant-tree-node-content-wrapper{
+      height: 40px;
+      line-height: 40px;
+}
+.tree .ant-tree li span.ant-tree-switcher, .ant-tree li span.ant-tree-iconEle{
+      line-height: 40px;
+    }
+.tree .ant-tree li{
+      padding: 0;
+}
+.tree .ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper > span, .ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-node-content-wrapper > span{
+  display: inherit;
+  width: 100%;
+}
+.tree .ant-tree{
+      padding: 0 8px;
+}
